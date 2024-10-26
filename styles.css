@@ -1,0 +1,88 @@
+/* Import Manrope font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(193, 38%, 86%);
+}
+
+.advice-container {
+    background-color: hsl(217, 19%, 24%);
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+#advice-id {
+    font-size: 12px;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 1rem;
+    
+}
+
+#advice-text {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.divider-container {
+    
+    justify-content: center; 
+    margin: 1.5rem 0; 
+}
+.divider {
+    background-image: url('images/pattern-divider-mobile.svg');
+    height: 15px;
+    margin: 1.5rem 0;
+ 
+    background-size: cover;
+}
+
+button {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 768px) {
+    .divider {
+        background-image: url('images/pattern-divider-desktop.svg');
+        height: 15.5px;
+        width:100%
+        
+    }
+}
